@@ -10,11 +10,19 @@ See below for a screen-shot of the included sample application (included as inde
 Note here that when the header toolbar is used on the panel its not perfect. You need to actually click on the toolbar text - the logic to skip the buttons is also ugly.
 
 The next two examples show the ClickPanel in action. One is created declarativey in the XML view and the other dynamically in application.js. The benefit of using a custom control is that it is self-contained and we don't need to pollute the calling application with code to trap events, etc.
-The control still uses UI5 CSS however. There is no way to escape this, particularly because I want it to render exactly as the standard sap.m.Panel does.
+The control still uses UI5 CSS however. There is no way to escape this, particularly because I want it to render exactly as the standard sap.m.Panel does. *To remove the dependency on UI5 CSS would mean writing the control from scratch. This is just intended as a helper/enhancer on the standard Panel*.
 
 The ClickPanel control falls back to working as a standard sap.m.Panel if you use it with a headerToolbar. You can however use the info toolbar which is only rendered when the panel is expanded and still get the features of the ClickPanel.
 
 ![image](https://cloud.githubusercontent.com/assets/1317161/16406095/8d2321c0-3d3e-11e6-818c-4b2880de72c7.png)
 
-##OpenUI5 version
+## OpenUI5 version
 This has been tested up to OpenUI5/SAPUI5 version 1.38.4.
+
+## How did ClickPanel come about?
+Simple from chatting with a colleague @MattHarding about the sap.m.Panel control and how to get it to open by clicking anywhere in the header for better usability. Then just whacked it on here...
+
+## What next
++ Add tests?
++ Wrap in library (probably not worth it unless bundling with other controls)
++ ...
