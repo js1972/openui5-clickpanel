@@ -20,7 +20,7 @@ The ClickPanel control falls back to working as a standard sap.m.Panel if you us
 This has been tested up to OpenUI5/SAPUI5 version 1.38.4.
 
 ## How did ClickPanel come about?
-Simple from chatting with a colleague [@mattieharding](https://github.com/mattieharding) about the sap.m.Panel control and how to get it to open by clicking anywhere in the header for better usability. Then just whacked it on here...
+Simply from chatting with a colleague [@mattieharding](https://github.com/mattieharding) about the sap.m.Panel control and how to get it to open by clicking anywhere in the header for better usability. Then just whacked it on here...
 
 ## What next
 + Add tests?
