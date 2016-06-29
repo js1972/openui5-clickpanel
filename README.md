@@ -17,12 +17,19 @@ The ClickPanel control falls back to working as a standard sap.m.Panel if you us
 ![image](https://cloud.githubusercontent.com/assets/1317161/16406095/8d2321c0-3d3e-11e6-818c-4b2880de72c7.png)
 
 ## OpenUI5 version
-This has been tested up to OpenUI5/SAPUI5 version 1.38.4.
+This has been tested up to OpenUI5/SAPUI5 version 1.38.4 (stable release as of Jun 2016) and back to version 1.34.12. It does not work on 1.28.35 (the control runtime seems to have changed since then).
 
 ## How did ClickPanel come about?
 Simply from chatting with a colleague [@mattieharding](https://github.com/mattieharding) about the sap.m.Panel control and how to get it to open by clicking anywhere in the header for better usability. Then just whacked it on here...
+
+## How to use?
++ To test ClickPanel you can simply git clone this repo and launch index.html from your favourite web server. Else, if you have Node.js and npm (why wouldn't you?) then run `$ npm install connect serve-static` followed by `$ node server.js` and you'll have a basic server to run the sample application with: `https://localhost:8080/`.
++ To use ClickPanel in your own app just copy the ClickPanel.js file to your project. I've used the 'progamic' namespace so adjust your bootstrap tag's resource roots to add: "programic": "./" (specify whatever directory you placed ClickPanel.js in). See the sample app: Application.js for how this is done.
 
 ## What next
 + Add tests?
 + Wrap in library (probably not worth it unless bundling with other controls)
 + ...
+
+## Contributions
+Contributions are most welcome if you can see better ways to do this or enhancements... Please send a pull-request.  ;-)
